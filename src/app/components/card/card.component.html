@@ -1,0 +1,36 @@
+<div *ngIf="filterObj.length != 0">
+  <div class="row my-card">
+    <div class="d-xl-flex justify-xl-content-start" *ngFor="let filter of filterObj">
+      <button type="button" class="btn filter-btn">{{filter}}</button>
+      <button type="button" (click)="close(filter)" class="btn close-btn" aria-label="Close">&times;</button>
+    </div>
+    <button type="button" (click)="clear()" class="btn btn-link clear-btn ml-auto">Clear</button>
+  </div>
+</div>
+
+<div *ngFor="let job of jobList ">
+  <div class="row my-card">
+    <div class=" col-xl-2 image">
+      <img alt="logo" src={{job.logo}}>
+    </div>
+    <div class="col-xl-4 details">
+      <div class="d-xl-flex justify-content-start">
+        <div class="company">{{job.company}}</div>
+        <div *ngIf=job.new><span class="badge badge-pill badge-info new">NEW!</span></div>
+        <div *ngIf=job.featured><span class="badge badge-pill badge-info featured">FEATURED</span></div>
+      </div>
+
+      <div class="position">
+        <h5>{{job.position}}</h5>
+      </div>
+      <div class="position-detail">{{job.postedAt}} &#8226; {{job.contract}} &#8226; {{job.location}}</div>
+    </div>
+    <div class=" col-xl-6 filter">
+      <div class="d-xl-flex justify-xl-content-end">
+        <app-role *ngIf=job.role [role]=job.role (roleEvent)="filterRole($event)"></app-role>
+        <app-level *ngIf=job.level [level]=job.level (levelEvent)="filterLevel($event)"></app-level>
+        <app-languages *ngIf=job.languages [languages]=job.languages (langEvent)="filterLang($event)"></app-languages>
+      </div>
+    </div>
+  </div>
+</div>

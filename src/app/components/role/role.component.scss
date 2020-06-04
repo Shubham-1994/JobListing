@@ -1,0 +1,71 @@
+.btn{
+    font-weight: 600;
+    margin-left: 20px;
+    background-color: hsl(180, 31%, 95%);
+    color: hsl(180, 29%, 50%);
+}
+.btn:hover{
+    // font-weight: 600;
+    // margin-left: 20px;
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(180, 31%, 95%);
+}
+.btn:focus{
+    // font-weight: 600;
+    // margin-left: 20px;
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(180, 31%, 95%);
+}
+
+@media (max-width: 575.98px) { 
+    .btn{
+        margin-left: 0px;
+        font-size: 12px;
+        width: max-content;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    .btn{
+        margin-left: 0px;
+        font-size: 12px;
+        width: max-content;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    
+  }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .btn{
+        margin-left: 0px;
+        font-size: 12px;
+        width: max-content;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .btn{
+        margin-left: 0px;
+        font-size: 12px;
+        width: max-content;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { 
+//     .btn{
+//         margin-left: 0px;
+//         font-size: 12px;
+//         width: max-content;
+//         margin-right: 5px;
+//         margin-bottom: 5px;
+//     }
+//  }

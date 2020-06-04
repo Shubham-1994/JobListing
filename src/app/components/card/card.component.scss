@@ -1,0 +1,176 @@
+$primary:  hsl(180, 29%, 50%);
+
+
+.my-card{
+    background-color: white;
+    margin: 50px;
+    margin-left: 200px;
+    padding: 16px;
+    border-radius: 6px;
+    border: solid 1px #ccc;
+    border-left-width: 0.3rem;
+    border-left-color: $primary;
+    box-shadow: 1px 2px 5px hsl(180, 8%, 52%)
+}
+
+.company{
+    margin-right: 10px;
+    color:  $primary;
+    font-weight: 600;
+}
+.position{
+    color: hsl(180, 14%, 20%);;
+}
+
+.position:hover{
+    color: $primary;
+    cursor: pointer;
+}
+.position-detail{
+    color: hsl(180, 8%, 52%);
+}
+.badge{
+    margin-right: 10px;
+}
+.badge-info.new{
+    background-color: $primary;
+}
+.badge-info.featured{
+    background-color:hsl(180, 14%, 20%);
+}
+
+.btn{
+    font-weight: 600;
+    margin-left: 20px;
+    background-color: hsl(180, 31%, 95%);
+    color: $primary;
+}
+.btn:hover{
+    // font-weight: 600;
+    // margin-left: 20px;
+    background-color: $primary;
+    color: hsl(180, 31%, 95%);
+}
+.btn:focus{
+    // font-weight: 600;
+    // margin-left: 20px;
+    background-color: $primary;
+    color: hsl(180, 31%, 95%);
+}
+.close-btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color:$primary;
+    color: white;
+    margin-left: -2px;
+    // @media (max-width: 575.98px) {
+    //     margin-left: -8px;
+    // }
+}
+.close-btn:hover{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color:hsl(180, 14%, 20%);
+    color: white;
+    // margin-left: -2px;
+}
+.filter-btn{
+    font-weight: 600;
+    margin-left: 20px;
+    background-color: hsl(180, 31%, 95%);
+    color: $primary;
+    // @media (max-width: 575.98px) {
+    //     margin-left: 5px;
+    // }
+   
+}
+.filter-btn:hover{
+    // font-weight: 600;
+    // margin-left: 20px;
+    background-color: hsl(180, 31%, 95%);
+    color: $primary;
+}
+
+@media (max-width: 575.98px) { 
+    .my-card{
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .btn{
+        margin-left: 0px;
+        font-size: 12px;
+        width: max-content;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .filter-btn{
+        margin-left: 5px;
+    }
+    .close-btn{
+        margin-left: -8px;
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    .my-card{
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .btn{
+        margin-left: 0px;
+        font-size: 12px;
+        width: max-content;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .filter-btn{
+        margin-left: 5px;
+    }
+    .close-btn{
+        margin-left: -8px;
+    }
+  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .my-card{
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .btn{
+        margin-left: 0px;
+        font-size: 12px;
+        width: max-content;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .filter-btn{
+        margin-left: 5px;
+    }
+    .close-btn{
+        margin-left: -8px;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .my-card{
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .btn{
+        margin-left: 0px;
+        font-size: 12px;
+        width: max-content;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .filter-btn{
+        margin-left: 5px;
+    }
+    .close-btn{
+        margin-left: -8px;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

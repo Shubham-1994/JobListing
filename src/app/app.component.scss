@@ -1,0 +1,9 @@
+.header{
+    background-color: hsl(180, 29%, 50%)
+}
+
+@media (max-width: 575.98px) { 
+    .header img{
+       width: 330px;
+    }
+ }
